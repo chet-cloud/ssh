@@ -20,7 +20,7 @@ ADD ./start.sh /etc/start.sh
 RUN chmod +x /bin/ngrok
 RUN chmod +x /etc/start.sh
 
-RUN apt install tmux vim curl wget sudo -y
+RUN apt install tmux vim curl wget git -y
 
 RUN curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 RUN apt install -y nodejs
